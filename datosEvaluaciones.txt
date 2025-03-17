@@ -1,0 +1,7 @@
+Asig1: 5
+Asig2: 5
+Asig3: 10
+Ex1: 15
+Ex2: 15
+Ex3: 15
+ExFinal: 35
