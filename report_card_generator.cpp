@@ -30,11 +30,11 @@ bool leerDatosEstudiantes(const std::string& nombreArchivo, std::vector<Estudian
         Estudiante est; //Crea un objeto Estudiante
         est.nombre = nombreCompleto; //Asigna el nombre extraido
         est.id = id; //Asigna el ID extraido
-        estudiantes.push_back(est);  //Añade el estudiante al vector
+        estudiantes.push_back(est);  //AÃ±ade el estudiante al vector
     }
 
     archivo.close(); //Cierra el archivo despues de leerlo
-    return true; //Indica éxito
+    return true; //Indica Ã©xito
 }
 
 //Funcion que lee datos de evaluaciones desde un archivo y los almacena en un vector
@@ -55,7 +55,7 @@ bool leerDatosEvaluaciones(const std::string& nombreArchivo, std::vector<std::pa
         std::getline(stream, nombreEvaluacion, ':'); //Extrae el nombre de la evaluacion hasta ':'
         stream >> porcentaje; //Extrae el porcentaje de la evaluacion
 
-        evaluaciones.emplace_back(nombreEvaluacion, porcentaje); //Añade la evaluacion al vector
+        evaluaciones.emplace_back(nombreEvaluacion, porcentaje); //AÃ±ade la evaluacion al vector
         sumaPorcentajes += porcentaje; //Suma el porcentaje al total
     }
 
@@ -145,7 +145,7 @@ int main() {
         }
         //Si el usuario decide no seguir intentando termina el programa
         if (opcion != 's' && opcion != 'S') {
-            return 1; //Termina el programa con un código de error
+            return 1; //Termina el programa con un cÃ³digo de error
         }
     }
 
@@ -177,7 +177,7 @@ int main() {
         }
         //Si el usuario decide no seguir intentando termina el programa
         if (opcion != 's' && opcion != 'S') {
-            return 1; //Termina el programa con un código de error
+            return 1; //Termina el programa con un cÃ³digo de error
         }
     }
 
